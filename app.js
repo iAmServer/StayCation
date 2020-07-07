@@ -15,7 +15,7 @@ const mongoose = require("mongoose");
 const flash = require('connect-flash');
 
 mongoose
-  .connect('mongodb://localhost:27017/staycation', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
+  .connect('mongodb+srv://server:server@staycation.exex2.mongodb.net/test?retryWrites=true&w=majority', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => { })
   .catch(error => {
     console.log(error);

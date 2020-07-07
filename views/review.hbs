@@ -2,10 +2,12 @@
     style="background-image: url({{service.image}}); background-size: cover">
     <div class="container text-center text-primary">
         <h1 class="">{{service.title}}</h1>
-        <p class="lead">{{service.desc}}</p>
+        <p class="lead">Reviews {{review}} of 5</p>
+        <h4 class="lead">{{service.desc}}</h4>
     </div>
 </div>
 
+{{#if user}}
 <section class="p-5">
     <div id="contact" class="container">
         <h2 class="text-center">Write Review</h2>
@@ -41,3 +43,4 @@
         </div>
     </div>
 </section>
+{{/if}}
