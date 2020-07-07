@@ -1,11 +1,15 @@
 # StayCation
 
-A simple staycation website with nodeJS and mongo db
+A simple staycation website with nodeJS and mongo db with admin panel
 
 ### How to execute
 
 - Clone repo
 
-`yarn`
+- `yarn`
 
-`nodemon start`
+- `nodemon start`
+
+### Access admin
+
+`localhost:5500/admin`
