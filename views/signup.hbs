@@ -1,0 +1,31 @@
+<div class="global-container">
+    <div class="card login-form">
+        <div class="card-body">
+            <h3 class="card-title text-center">Signup to StayCation</h3>
+            <div class="card-text">
+                {{#if message}}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">{{message}}</div>
+                {{/if}}
+                <form action="register" method="POST">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Ful Name</label>
+                        <input type="test" class="form-control form-control-sm" id="name" name="name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control form-control-sm" id="email" name="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control form-control-sm" id="password" name="password" />
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+
+                    <div class="sign-up">
+                        You have an account? <a href="/login">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
